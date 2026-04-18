@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
-const BASE_URL = '/api';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 
 // ─── Axios instance ────────────────────────────────────────────────────────────
 const api = axios.create({
-  baseURL: BASE_URL,
+  baseURL: BASE_URL ? `${BASE_URL}/api` : '/api',
   timeout: 60000,
   headers: { 'Content-Type': 'application/json' },
 });
@@ -15,7 +15,7 @@ let socket = null;
 
 export function getSocket() {
   if (!socket) {
-    socket = io('/', {
+    socket = io(BASE_URL || '/', {
       path: '/socket.io',
       transports: ['websocket', 'polling'],
       reconnection: true,
