@@ -5,13 +5,18 @@ import toast from 'react-hot-toast';
 import { fetchMapPrices, fetchWeather, fetchAMSPrices, fetchWASDE } from '../services/api';
 
 const CITIES = [
-  { value: 'nyc', label: 'New York City, NY', lat: 40.7128, lon: -74.0060, state: 'new york' },
-  { value: 'washington', label: 'Washington, DC', lat: 38.9072, lon: -77.0369, state: 'virginia' },
-  { value: 'boston', label: 'Boston, MA', lat: 42.3601, lon: -71.0589, state: 'massachusetts' },
-  { value: 'chicago', label: 'Chicago, IL', lat: 41.8781, lon: -87.6298, state: 'illinois' },
-  { value: 'kc', label: 'Kansas City, MO', lat: 39.0997, lon: -94.5786, state: 'missouri' },
-  { value: 'desmoines', label: 'Des Moines, IA', lat: 41.5868, lon: -93.6250, state: 'iowa' },
-  { value: 'okc', label: 'Oklahoma City, OK', lat: 35.4676, lon: -97.5164, state: 'oklahoma' },
+  { value: 'nyc', label: 'New York City, NY', lat: 40.7128, lon: -74.0060, state: 'New York' },
+  { value: 'washington', label: 'Washington, DC', lat: 38.9072, lon: -77.0369, state: 'District of Columbia' },
+  { value: 'boston', label: 'Boston, MA', lat: 42.3601, lon: -71.0589, state: 'Massachusetts' },
+  { value: 'chicago', label: 'Chicago, IL', lat: 41.8781, lon: -87.6298, state: 'Illinois' },
+  { value: 'kc', label: 'Kansas City, MO', lat: 39.0997, lon: -94.5786, state: 'Missouri' },
+  { value: 'desmoines', label: 'Des Moines, IA', lat: 41.5868, lon: -93.6250, state: 'Iowa' },
+  { value: 'okc', label: 'Oklahoma City, OK', lat: 35.4676, lon: -97.5164, state: 'Oklahoma' },
+  { value: 'dallas', label: 'Dallas, TX', lat: 32.7767, lon: -96.7970, state: 'Texas' },
+  { value: 'atlanta', label: 'Atlanta, GA', lat: 33.7490, lon: -84.3880, state: 'Georgia' },
+  { value: 'denver', label: 'Denver, CO', lat: 39.7392, lon: -104.9903, state: 'Colorado' },
+  { value: 'miami', label: 'Miami, FL', lat: 25.7617, lon: -80.1918, state: 'Florida' },
+  { value: 'seattle', label: 'Seattle, WA', lat: 47.6062, lon: -122.3321, state: 'Washington' },
 ];
 
 const COMMODITIES = [
@@ -19,6 +24,11 @@ const COMMODITIES = [
   { value: 'soybeans', label: '🌿 Soybeans' },
   { value: 'wheat', label: '🌾 Wheat' },
   { value: 'cattle', label: '🐄 Cattle' },
+  { value: 'rice', label: '🍚 Rice' },
+  { value: 'cotton', label: '🧶 Cotton' },
+  { value: 'strawberries', label: '🍓 Strawberries' },
+  { value: 'oranges', label: '🍊 Oranges' },
+  { value: 'milk', label: '🥛 Milk' },
 ];
 
 // Helper to auto-fly map
@@ -43,15 +53,20 @@ export default function MapPage() {
     setLoading(true);
     try {
       const [amsRes, wxRes] = await Promise.allSettled([
-        fetchAMSPrices(comm),
-        fetchWeather(cityObj.state) // The weather API uses state names internally, close enough
+        fetchAMSPrices(comm, { market: cityObj.label }),
+        fetchWeather(cityObj.label)
       ]);
 
       if (amsRes.status === 'fulfilled' && amsRes.value.success) {
         setAmsData(amsRes.value.data);
+      } else {
+        setAmsData({ error: 'Data unavailable' });
       }
+
       if (wxRes.status === 'fulfilled' && wxRes.value.success) {
         setWeatherData(wxRes.value.data);
+      } else {
+        setWeatherData({ error: 'Weather unavailable' });
       }
     } catch (err) {
       toast.error('Failed to load dashboard data');
@@ -158,14 +173,23 @@ export default function MapPage() {
               </div>
             )}
 
-            {/* General Advice (Mocked for localized feel as requested) */}
+            {/* General Advice (Localized & Dynamic) */}
             <div className="glass-card p-4 rounded-2xl bg-green-900/10 border-green-800/30">
                <div className="text-xs text-green-400 font-bold mb-2 flex items-center gap-2">
                  <span>🌾</span> Agronomy Insights
                </div>
                <p className="text-sm text-gray-300 leading-relaxed">
-                 Based on current USDA historical patterns for <strong className="text-white capitalize">{commodity}</strong> near <strong className="text-white">{selectedCity.label}</strong>, optimal yield windows occur when soil moisture remains above 40%. The current transport infrastructure remains highly favorable.
+                 {weatherData && weatherData.current?.temperature > 85 ? (
+                   <>Extreme heat detected near <strong className="text-white">{selectedCity.label}</strong>. We recommend increasing irrigation cycles for <strong className="text-white capitalize">{commodity}</strong> to prevent heat stress and maintain yield potential.</>
+                 ) : weatherData && weatherData.current?.temperature < 40 ? (
+                   <>Frost risk warning for <strong className="text-white capitalize">{commodity}</strong>. Consider temporary cover or thermal management strategies in the <strong className="text-white">{selectedCity.state}</strong> region.</>
+                 ) : (
+                   <>Current conditions in <strong className="text-white">{selectedCity.label}</strong> are optimal for <strong className="text-white capitalize">{commodity}</strong> development. Maintain standard nitrogen applications and monitor soil moisture above 40%.</>
+                 )}
                </p>
+               <div className="mt-3 pt-3 border-t border-green-900/40 text-[10px] text-gray-400">
+                 Market Outlook: {amsData?.weightedAvg > 400 ? '📈 Strong Demand' : '📉 Price Stabilization'}
+               </div>
             </div>
 
             {/* Weather Module */}

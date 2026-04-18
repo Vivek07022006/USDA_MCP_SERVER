@@ -855,3 +855,9 @@
 2026-04-18 17:52:09 [INFO]: ::1 - - [18/Apr/2026:12:22:09 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 2026-04-18 17:52:09 [INFO]: ::1 - - [18/Apr/2026:12:22:09 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
 2026-04-18 17:52:22 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:56:48 [INFO]: [WS] Client connected: IVv-V6M_O-NVfKZ2AAAF
+2026-04-18 17:56:48 [INFO]: ::1 - - [18/Apr/2026:12:26:48 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 18:08:14 [INFO]: [WS] Client disconnected: 4f_F1Cq7n7Hs-g8UAAAD
+2026-04-18 18:08:14 [INFO]: [WS] Client disconnected: IVv-V6M_O-NVfKZ2AAAF
+2026-04-18 18:14:18 [INFO]: ::1 - - [18/Apr/2026:12:44:18 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 18:14:18 [INFO]: ::1 - - [18/Apr/2026:12:44:18 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
