@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: usda-mcp-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: AMS_API_KEY
+        sync: false
+      - key: SOCRATA_APP_TOKEN
+        sync: false
+      - key: MONGODB_URI
+        sync: false
