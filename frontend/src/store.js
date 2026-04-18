@@ -4,6 +4,8 @@ const useStore = create((set, get) => ({
   // Navigation  
   activePage: 'chat',
   setActivePage: (page) => set({ activePage: page }),
+  language: 'en',
+  setLanguage: (lang) => set({ language: lang }),
 
   // Session
   sessionId: null,

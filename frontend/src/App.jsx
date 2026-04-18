@@ -5,6 +5,7 @@ import ChatPage from './pages/ChatPage';
 import MapPage from './pages/MapPage';
 import LogsPage from './pages/LogsPage';
 import { createSession, fetchHealth } from './services/api';
+import { translations } from './translations';
 
 // Icons
 const Icons = {
@@ -29,20 +30,16 @@ const Icons = {
     </svg>
   ),
   Signal: ({ status }) => (
-    <div className={`w-2 h-2 rounded-full ${status === 'ok' ? 'bg-green-400 shadow-green-400/60 shadow-sm' : 'bg-red-400'}`} 
+    <div className={`w-2 h-2 rounded-full ${status === 'ok' ? 'bg-green-500 shadow-green-500/30 shadow-sm' : 'bg-red-400'}`} 
          style={{ animation: status === 'ok' ? 'pulse 2s ease-in-out infinite' : 'none' }} />
   ),
 };
 
-const NAV_ITEMS = [
-  { id: 'chat', label: 'AI Assistant', Icon: Icons.Chat },
-  { id: 'map', label: 'Map Dashboard', Icon: Icons.Map },
-];
-
 export default function App() {
-  const { activePage, setActivePage, setSessionId } = useStore();
+  const { activePage, setActivePage, setSessionId, language, setLanguage } = useStore();
   const [serverStatus, setServerStatus] = useState('checking');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  const T = translations[language];
 
   useEffect(() => {
     // Initialize session
@@ -89,47 +86,61 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen overflow-hidden bg-white text-gray-900">
       {/* ── Top Navigation ── */}
-      <nav className="glass-card-dark border-b border-green-900/30 flex-none z-40">
-        <div className="max-w-screen-2xl mx-auto px-4 h-14 flex items-center gap-4">
-          {/* Logo */}
+      <nav className="glass-card border-b border-green-100 flex-none z-40 bg-white/80">
+        <div className="max-w-screen-2xl mx-auto px-4 h-14 flex items-center justify-between">
+          
+          {/* Left: Logo */}
           <div className="flex items-center gap-3 flex-none">
-            <div className="relative">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center shadow-lg shadow-green-900/50">
-                <Icons.Wheat />
-              </div>
-              <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-amber-400 rounded-full border-2 border-gray-950" />
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg shadow-green-200">
+              <Icons.Wheat />
             </div>
             <div className="hidden sm:block">
-              <div className="font-display font-bold text-base gradient-text leading-tight">AgriMCP AI</div>
-              <div className="text-gray-500 text-xs">USDA Smart Agriculture</div>
+              <div className="font-display font-bold text-base text-gray-900 leading-tight">AgriMCP AI</div>
+              <div className="text-gray-500 text-xs flex items-center gap-1.5">
+                <Icons.Signal status={serverStatus} />
+                {T.dataSource}
+              </div>
             </div>
           </div>
 
-          {/* Center Nav */}
-          <div className="flex-1 flex justify-center">
-            <div className="flex items-center gap-1 glass-card p-1 rounded-2xl">
-              {NAV_ITEMS.map(({ id, label, Icon }) => (
-                <button
-                  key={id}
-                  id={`nav-${id}`}
-                  onClick={() => { setActivePage(id); setMobileMenuOpen(false); }}
-                  className={`nav-btn ${activePage === id ? 'active' : ''}`}
-                >
-                  <Icon />
-                  <span className="hidden sm:inline">{label}</span>
-                </button>
-              ))}
-            </div>
+          {/* Center: Nav Switches */}
+          <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-2xl">
+            <button
+              onClick={() => setActivePage('chat')}
+              className={`nav-btn px-4 py-1.5 rounded-xl flex items-center gap-2 text-sm font-semibold transition-all ${activePage === 'chat' ? 'bg-white text-green-700 shadow-sm' : 'text-gray-500 hover:text-gray-800'}`}
+            >
+              <Icons.Chat />
+              <span className="hidden md:inline">{T.assistant}</span>
+            </button>
+            <button
+              onClick={() => setActivePage('map')}
+              className={`nav-btn px-4 py-1.5 rounded-xl flex items-center gap-2 text-sm font-semibold transition-all ${activePage === 'map' ? 'bg-white text-green-700 shadow-sm' : 'text-gray-500 hover:text-gray-800'}`}
+            >
+              <Icons.Map />
+              <span className="hidden md:inline">{T.map}</span>
+            </button>
           </div>
 
-          {/* Right side removed per user request */}
+          {/* Right: Language Selector */}
+          <div className="flex items-center gap-2">
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value)}
+              className="bg-transparent border border-green-200 rounded-lg px-2 py-1 text-xs font-bold text-green-700 focus:outline-none focus:ring-1 focus:ring-green-500 cursor-pointer"
+            >
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="hi">हिंदी</option>
+            </select>
+          </div>
+
         </div>
       </nav>
 
       {/* ── Page Content ── */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden relative">
         {renderPage()}
       </div>
 
@@ -137,18 +148,20 @@ export default function App() {
         position="top-right"
         toastOptions={{
           style: {
-            background: 'rgba(5, 46, 22, 0.95)',
-            color: '#dcfce7',
-            border: '1px solid rgba(22,163,74,0.4)',
-            borderRadius: '12px',
-            backdropFilter: 'blur(12px)',
-            fontSize: '13px',
+            background: '#ffffff',
+            color: '#166534',
+            border: '1px solid rgba(22,163,74,0.15)',
+            borderRadius: '16px',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+            fontSize: '14px',
             fontFamily: 'Inter, sans-serif',
+            fontWeight: '600'
           },
-          success: { iconTheme: { primary: '#22c55e', secondary: '#052e16' } },
-          error: { iconTheme: { primary: '#ef4444', secondary: '#052e16' } },
+          success: { iconTheme: { primary: '#22c55e', secondary: '#ffffff' } },
+          error: { iconTheme: { primary: '#ef4444', secondary: '#ffffff' } },
         }}
       />
     </div>
   );
 }
+

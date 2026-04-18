@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import toast from 'react-hot-toast';
 import useStore from '../store';
 import { getSocket, sendChatMessage, sendChatHTTP } from '../services/api';
+import { translations } from '../translations';
 
 // ─── Suggested prompts ────────────────────────────────────────────────────────
 const SUGGESTED_PROMPTS = [
@@ -157,7 +158,8 @@ function TypingIndicator() {
 
 // ─── Main ChatPage ────────────────────────────────────────────────────────────
 export default function ChatPage() {
-  const { messages, addMessage, isTyping, setTyping, sessionId, setLastToolsUsed } = useStore();
+  const { language, messages, addMessage, isTyping, setTyping, sessionId, setLastToolsUsed } = useStore();
+  const T = translations[language];
   const [input, setInput] = useState('');
   const [useWebSocket, setUseWebSocket] = useState(true);
   const messagesEndRef = useRef(null);
@@ -281,7 +283,7 @@ export default function ChatPage() {
         {/* Messages */}
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
           {isEmpty ? (
-            <WelcomeScreen onPromptClick={(p) => sendMessage(p)} />
+            <WelcomeScreen onPromptClick={(p) => sendMessage(p)} T={T} />
           ) : (
             <>
               {messages.map((msg) =>
@@ -306,7 +308,7 @@ export default function ChatPage() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about crop prices, weather, profit analysis, AMS reports…"
+              placeholder={T.askPlaceholder}
               rows={1}
               disabled={isTyping}
               className="input-agri flex-1 resize-none min-h-[44px] max-h-32 py-3"
@@ -356,48 +358,41 @@ export default function ChatPage() {
 }
 
 // ─── Welcome / Empty State ────────────────────────────────────────────────────
-function WelcomeScreen({ onPromptClick }) {
-  return (
-    <div className="flex flex-col items-center justify-center h-full px-4 py-8 animate-fade-in">
-      {/* Hero */}
-      <div className="relative mb-6">
-        <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-green-600 to-green-900 flex items-center justify-center text-4xl shadow-2xl shadow-green-900/50">
-          🌾
-        </div>
-        <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-sm shadow-lg">
-          🤖
-        </div>
-      </div>
+function WelcomeScreen({ onPromptClick, T }) {
+  const suggestions = [T.suggest1, T.suggest2, T.suggest3, T.suggest4];
 
-      <h1 className="font-display font-bold text-2xl md:text-3xl gradient-text text-center mb-2">
-        AgriMCP AI Assistant
+  return (
+    <div className="flex flex-col items-center justify-center h-full px-4 py-8 animate-fade-in text-center">
+      <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-2xl mb-8 transform rotate-12">
+        <span className="text-4xl text-white">🌱</span>
+      </div>
+      
+      <h1 className="text-3xl md:text-5xl font-black text-gray-900 mb-2 tracking-tight">
+        {T.welcomeTitle}
       </h1>
-      <p className="text-gray-400 text-sm text-center max-w-md mb-8 leading-relaxed">
-        Powered by real USDA data sources — AMS, NASS, ERS, WASDE. Ask me about crop prices,
-        livestock markets, weather, profit analysis, and more.
+      <p className="text-green-600 font-bold uppercase text-sm tracking-widest mb-6 px-1">
+        {T.welcomeSub}
+      </p>
+      <p className="max-w-md text-gray-500 text-sm mb-12 leading-relaxed font-medium">
+        {T.welcomeDesc}
       </p>
 
-      {/* Stats bar */}
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
-        {[
-          { icon: '📡', label: 'USDA AMS Live', desc: '9 commodities' },
-          { icon: '📊', label: 'NASS QuickStats', desc: 'All states' },
-          { icon: '🌤️', label: 'Live Weather', desc: '5-day forecast' },
-          { icon: '💰', label: 'Profit Engine', desc: 'Multi-route' },
-        ].map((s, i) => (
-          <div key={i} className="glass-card px-4 py-2.5 rounded-xl text-center">
-            <div className="text-xl mb-0.5">{s.icon}</div>
-            <div className="text-xs font-medium text-green-300">{s.label}</div>
-            <div className="text-xs text-gray-600">{s.desc}</div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+        {suggestions.map((text, i) => (
+          <button
+            key={i}
+            onClick={() => onPromptClick(text)}
+            className="flex items-center justify-between p-5 rounded-2xl bg-white border border-green-100 hover:border-green-300 hover:bg-green-50 transition-all text-left shadow-sm group"
+          >
+            <span className="text-sm font-bold text-gray-700 group-hover:text-green-800">{text}</span>
+            <span className="text-gray-300 group-hover:text-green-500">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
         ))}
       </div>
-
-      {/* Suggested prompts removed */}
-
-      <p className="text-xs text-gray-700 mt-6 text-center">
-        🔒 Secure • Real USDA data only • No mock prices
-      </p>
     </div>
   );
 }
