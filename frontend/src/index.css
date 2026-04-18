@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --agri-primary: #16a34a;
+    --agri-dark: #052e16;
+    --agri-light: #dcfce7;
+    --earth-gold: #f59e0b;
+    --sidebar-w: 260px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-gray-950 text-gray-100 font-sans antialiased;
+    background: radial-gradient(ellipse at top left, #052e16 0%, #0a0a0a 50%, #0f1a0f 100%);
+    min-height: 100vh;
+  }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-green-800 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-green-600; }
+  /* Leaflet map override */
+  .leaflet-container { @apply rounded-xl; font-family: 'Inter', sans-serif !important; }
+}
+
+@layer components {
+  /* Glass card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .glass-card-dark {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(22, 163, 74, 0.2);
+    backdrop-filter: blur(24px);
+  }
+  /* Gemini gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 40%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  /* Chat bubble – user */
+  .chat-bubble-user {
+    background: linear-gradient(135deg, #15803d, #166534);
+    border-radius: 18px 18px 4px 18px;
+    @apply shadow-lg shadow-green-900/30;
+  }
+  /* Chat bubble – AI */
+  .chat-bubble-ai {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(22, 163, 74, 0.2);
+    border-radius: 18px 18px 18px 4px;
+    @apply shadow-lg;
+  }
+  /* Tool badge */
+  .tool-badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+    background: rgba(22, 163, 74, 0.15);
+    border: 1px solid rgba(22, 163, 74, 0.3);
+    color: #4ade80;
+  }
+  /* Nav button */
+  .nav-btn {
+    @apply flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200;
+  }
+  .nav-btn.active {
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.3), rgba(21, 128, 61, 0.2));
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    @apply text-green-300;
+    box-shadow: 0 0 20px rgba(22, 163, 74, 0.2);
+  }
+  .nav-btn:not(.active) { @apply text-gray-400 hover:text-gray-200 hover:bg-white/5; }
+  /* Primary button */
+  .btn-primary {
+    @apply px-6 py-2.5 rounded-xl font-semibold text-sm text-white transition-all duration-200;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.35);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.45);
+  }
+  .btn-primary:active { transform: translateY(0); }
+  /* Input field */
+  .input-agri {
+    @apply w-full px-4 py-3 rounded-xl text-sm text-gray-100 placeholder-gray-500 outline-none transition-all duration-200;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .input-agri:focus {
+    border-color: rgba(74, 222, 128, 0.4);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+  }
+  /* Typing dots */
+  .typing-dot {
+    @apply w-2 h-2 rounded-full bg-green-400;
+    animation: bounceDot 1.4s ease-in-out infinite;
+  }
+  .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+  .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+  /* Stat card */
+  .stat-card {
+    @apply glass-card rounded-2xl p-4 flex items-center gap-3;
+  }
+  /* Price pill */
+  .price-up { @apply text-green-400 bg-green-950/60 px-2 py-0.5 rounded-full text-xs font-semibold; }
+  .price-down { @apply text-red-400 bg-red-950/60 px-2 py-0.5 rounded-full text-xs font-semibold; }
+  /* Data source badge */
+  .source-badge {
+    @apply inline-flex items-center gap-1 text-xs text-gray-500 italic;
+  }
+  /* Markdown rendered in AI messages */
+  .ai-markdown h1, .ai-markdown h2, .ai-markdown h3 { @apply text-green-300 font-semibold mt-3 mb-1; }
+  .ai-markdown p { @apply text-gray-200 leading-relaxed mb-2; }
+  .ai-markdown strong { @apply text-white font-semibold; }
+  .ai-markdown ul { @apply list-disc pl-5 space-y-1 text-gray-200; }
+  .ai-markdown ol { @apply list-decimal pl-5 space-y-1 text-gray-200; }
+  .ai-markdown code { @apply bg-gray-800 text-green-300 px-1.5 py-0.5 rounded text-xs font-mono; }
+  .ai-markdown pre { @apply bg-gray-900 rounded-xl p-3 overflow-x-auto text-xs; }
+  .ai-markdown blockquote { @apply border-l-2 border-green-500 pl-3 text-gray-400 italic; }
+  .ai-markdown table { @apply w-full text-sm border-collapse; }
+  .ai-markdown th { @apply text-left p-2 border-b border-gray-700 text-green-400 font-medium; }
+  .ai-markdown td { @apply p-2 border-b border-gray-800 text-gray-300; }
+}

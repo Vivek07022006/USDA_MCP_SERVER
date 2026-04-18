@@ -1,0 +1,857 @@
+2026-04-18 10:58:55 [INFO]: ✅ MongoDB connected
+2026-04-18 10:58:55 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 10:58:55 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 10:58:55 [INFO]: 🤖 Gemini Model: gemini-2.0-flash
+2026-04-18 10:58:55 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 11:05:34 [INFO]: ✅ MongoDB connected
+2026-04-18 11:05:34 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 11:05:34 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 11:05:34 [INFO]: 🤖 Gemini Model: gemini-2.0-flash
+2026-04-18 11:05:34 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 11:06:13 [INFO]: ✅ MongoDB connected
+2026-04-18 11:06:13 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 11:06:13 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 11:06:13 [INFO]: 🤖 Gemini Model: gemini-2.0-flash
+2026-04-18 11:06:13 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 11:06:21 [INFO]: ::1 - - [18/Apr/2026:05:36:21 +0000] "POST /api/auth/session HTTP/1.1" 200 96 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:21 [INFO]: ::1 - - [18/Apr/2026:05:36:21 +0000] "POST /api/auth/session HTTP/1.1" 200 96 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:21 [INFO]: [WS] Client connected: xWMPkGWDYAtRlvKFAAAB
+2026-04-18 11:06:38 [INFO]: ::1 - - [18/Apr/2026:05:36:38 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 556 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:38 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 11:06:38 [INFO]: ::1 - - [18/Apr/2026:05:36:38 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 570 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: Request failed with status code 403
+2026-04-18 11:06:41 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:06:41 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:41 [INFO]: ::1 - - [18/Apr/2026:05:36:41 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 200 45 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:41 [INFO]: ::1 - - [18/Apr/2026:05:36:41 +0000] "GET /api/data/ams/corn HTTP/1.1" 200 371 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:41 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 11:06:41 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:42 [INFO]: ::1 - - [18/Apr/2026:05:36:42 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:42 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: Request failed with status code 403
+2026-04-18 11:06:42 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:06:42 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 11:06:42 [INFO]: ::1 - - [18/Apr/2026:05:36:42 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:48 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="latest"
+2026-04-18 11:06:48 [INFO]: ::1 - - [18/Apr/2026:05:36:48 +0000] "GET /api/data/wasde/soybeans HTTP/1.1" 200 566 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:48 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/3192: Request failed with status code 403
+2026-04-18 11:06:48 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:06:48 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 11:06:49 [INFO]: ::1 - - [18/Apr/2026:05:36:49 +0000] "GET /api/data/ams/soybeans HTTP/1.1" 200 375 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:50 [INFO]: ::1 - - [18/Apr/2026:05:36:50 +0000] "GET /api/map/prices?commodity=soybeans HTTP/1.1" 200 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:51 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 11:06:51 [INFO]: ::1 - - [18/Apr/2026:05:36:51 +0000] "GET /api/data/wasde/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: Request failed with status code 403
+2026-04-18 11:06:51 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:06:51 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:51 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:52 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:52 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 11:06:52 [INFO]: ::1 - - [18/Apr/2026:05:36:52 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:06:52 [INFO]: ::1 - - [18/Apr/2026:05:36:52 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:07:20 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:07:20 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 11:07:25 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 11:07:34 [ERROR]: [GEMINI R1] Failed: Request failed with status code 429. Using keyword fallback.
+2026-04-18 11:07:34 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn","market":"Chicago"})
+2026-04-18 11:07:34 [INFO]: [AMS] Fetching prices: commodity="corn", market="Chicago", date="latest"
+2026-04-18 11:07:35 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: Request failed with status code 403
+2026-04-18 11:07:35 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:07:35 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 11:07:35 [INFO]: [TOOLS] ✅ get_ams_prices done in 1815ms (cached: false)
+2026-04-18 11:07:36 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 11:07:40 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 11:18:00 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:18:01 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 11:18:05 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 11:18:13 [ERROR]: [GEMINI R1] Failed: Request failed with status code 429. Using keyword fallback.
+2026-04-18 11:18:13 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 11:18:13 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 11:18:15 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: Request failed with status code 403
+2026-04-18 11:18:15 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:18:15 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 11:18:16 [INFO]: [TOOLS] ✅ get_ams_prices done in 2780ms (cached: false)
+2026-04-18 11:18:17 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 11:18:21 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 11:22:29 [WARN]: ⚠️  MongoDB unavailable (running without DB): Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2026-04-18 11:23:58 [INFO]: ✅ MongoDB connected
+2026-04-18 11:23:58 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 11:23:58 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 11:23:58 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 11:23:58 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 11:24:06 [INFO]: [WS] Client connected: bn0lNMRdCeWBCGzlAAAB
+2026-04-18 11:29:30 [INFO]: ✅ MongoDB connected
+2026-04-18 11:29:30 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 11:29:30 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 11:29:30 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 11:29:30 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 11:29:31 [INFO]: [WS] Client connected: kvLd2bFFFoYCqlDvAAAB
+2026-04-18 11:29:46 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:29:48 [INFO]: [GEMINI R1] Got 0 tool call(s)
+2026-04-18 11:29:48 [INFO]: ::1 - - [18/Apr/2026:05:59:48 +0000] "POST /api/chat HTTP/1.1" 200 265 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:30:15 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:30:17 [INFO]: [GEMINI R1] Got 1 tool call(s)
+2026-04-18 11:30:17 [INFO]: [TOOLS] Executing: get_ams_prices({"reportDate":"4/13/2026","commodity":"cattle","market":"OKC"})
+2026-04-18 11:30:17 [INFO]: [AMS] Fetching prices: commodity="cattle", market="OKC", date="4/13/2026"
+2026-04-18 11:30:20 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.2/reports/1280: Request failed with status code 403
+2026-04-18 11:30:20 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:30:20 [INFO]: [AMS] No results for date 4/13/2026, fetching latest instead
+2026-04-18 11:30:20 [WARN]: AMS fetch failed [403] for https://marsapi.ams.usda.gov/services/v1.2/reports/1280: Request failed with status code 403
+2026-04-18 11:30:20 [WARN]: AMS returned 403 – try adding AMS_API_KEY to .env
+2026-04-18 11:30:20 [INFO]: [AMS] Falling back to keyword search for "cattle"
+2026-04-18 11:30:21 [INFO]: [TOOLS] ✅ get_ams_prices done in 3237ms (cached: false)
+2026-04-18 11:30:21 [INFO]: [GEMINI R2] Formatting response from tool results...
+2026-04-18 11:30:22 [INFO]: [GEMINI R2] ✅ Response generated
+2026-04-18 11:30:22 [INFO]: ::1 - - [18/Apr/2026:06:00:22 +0000] "POST /api/chat HTTP/1.1" 200 491 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:32:24 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:32:26 [INFO]: [GEMINI R1] Got 1 tool call(s)
+2026-04-18 11:32:26 [INFO]: [TOOLS] Executing: get_weather({"location":"Chicago"})
+2026-04-18 11:32:27 [INFO]: [TOOLS] ✅ get_weather done in 393ms (cached: false)
+2026-04-18 11:32:27 [INFO]: [GEMINI R2] Formatting response from tool results...
+2026-04-18 11:32:29 [INFO]: [GEMINI R2] ✅ Response generated
+2026-04-18 11:32:29 [INFO]: ::1 - - [18/Apr/2026:06:02:29 +0000] "POST /api/chat HTTP/1.1" 200 735 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:33:17 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 11:33:30 [INFO]: [GEMINI R1] Got 0 tool call(s)
+2026-04-18 11:33:30 [INFO]: ::1 - - [18/Apr/2026:06:03:30 +0000] "POST /api/chat HTTP/1.1" 200 390 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 11:49:09 [INFO]: ✅ MongoDB connected
+2026-04-18 11:49:09 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 11:49:09 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 11:49:09 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 11:49:09 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:01:15 [WARN]: ⚠️  MongoDB unavailable (running without DB): Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2026-04-18 12:01:15 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:01:15 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:01:15 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 12:01:15 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:01:22 [INFO]: [WS] Client connected: pN2304nJVX7V93BpAAAB
+2026-04-18 12:01:22 [INFO]: [WS] Client connected: oe4H1-lQRMwC8qtMAAAD
+2026-04-18 12:01:23 [INFO]: [WS] Client disconnected: pN2304nJVX7V93BpAAAB
+2026-04-18 12:01:39 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:01:47 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:01:47 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 12:01:47 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:01:52 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:01:52 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:01:55 [INFO]: [TOOLS] ✅ get_ams_prices done in 7551ms (cached: false)
+2026-04-18 12:01:55 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"iowa"})
+2026-04-18 12:01:55 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:01:57 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:01:57 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:01:58 [INFO]: [TOOLS] ✅ get_crop_forecast done in 3561ms (cached: false)
+2026-04-18 12:02:20 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:02:21 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:02:21 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"cattle","market":"OKC","reportDate":"4/13/2026"})
+2026-04-18 12:02:21 [INFO]: [AMS] Fetching prices: commodity="cattle", market="OKC", date="4/13/2026"
+2026-04-18 12:02:29 [INFO]: [TOOLS] ✅ get_ams_prices done in 8125ms (cached: false)
+2026-04-18 12:11:23 [INFO]: ✅ MongoDB connected
+2026-04-18 12:11:23 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:11:23 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:11:23 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 12:11:23 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:11:27 [INFO]: [WS] Client connected: JaKvU_uagtArNSZ2AAAB
+2026-04-18 12:15:16 [INFO]: ✅ MongoDB connected
+2026-04-18 12:15:16 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:15:16 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:15:16 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 12:15:16 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:15:29 [INFO]: [WS] Client connected: fFVK_chmSb0lBdLEAAAB
+2026-04-18 12:16:09 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:16:10 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:16:10 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 12:16:10 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:16:15 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:16:15 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:16:17 [INFO]: [TOOLS] ✅ get_ams_prices done in 6816ms (cached: false)
+2026-04-18 12:16:17 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"iowa"})
+2026-04-18 12:16:17 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:16:19 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:16:19 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:16:21 [INFO]: [TOOLS] ✅ get_crop_forecast done in 3727ms (cached: false)
+2026-04-18 12:16:44 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:16:45 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:16:45 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"cattle","market":"OKC","reportDate":"4/13/2026"})
+2026-04-18 12:16:45 [INFO]: [AMS] Fetching prices: commodity="cattle", market="OKC", date="4/13/2026"
+2026-04-18 12:17:14 [INFO]: [TOOLS] ✅ get_ams_prices done in 29181ms (cached: false)
+2026-04-18 12:20:29 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:20:30 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:20:30 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"soybeans","reportDate":"4/13/2026"})
+2026-04-18 12:20:30 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="4/13/2026"
+2026-04-18 12:20:32 [WARN]: [AMS] Report 3192 returned no price rows for soybeans
+2026-04-18 12:20:32 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 12:20:32 [INFO]: [TOOLS] ✅ get_ams_prices done in 2013ms (cached: false)
+2026-04-18 12:20:32 [INFO]: [TOOLS] Executing: get_transport_cost({"origin":"illinois","destination":"chicago","commodity":"soybeans","quantityTons":100})
+2026-04-18 12:20:34 [WARN]: Socrata transport fetch failed: Request failed with status code 403
+2026-04-18 12:20:34 [INFO]: [TOOLS] ✅ get_transport_cost done in 1971ms (cached: false)
+2026-04-18 12:31:20 [WARN]: ⚠️  MongoDB unavailable (running without DB): Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2026-04-18 12:31:20 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:31:20 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:31:20 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 12:31:20 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:36:28 [INFO]: ✅ MongoDB connected
+2026-04-18 12:36:28 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:36:28 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:36:28 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 12:36:28 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:36:30 [INFO]: [WS] Client connected: YTITe8v-UUXXyCJ9AAAB
+2026-04-18 12:36:38 [INFO]: [WS] Client disconnected: YTITe8v-UUXXyCJ9AAAB
+2026-04-18 12:36:38 [INFO]: [WS] Client connected: lfz0phPQfvWXonjzAAAD
+2026-04-18 12:36:45 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:36:47 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:36:47 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 12:36:47 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:36:48 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:36:48 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:36:49 [INFO]: [TOOLS] ✅ get_ams_prices done in 2006ms (cached: false)
+2026-04-18 12:36:49 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"iowa"})
+2026-04-18 12:36:49 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 12:36:49 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 12:36:49 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 12:36:51 [INFO]: [TOOLS] ✅ get_crop_forecast done in 1962ms (cached: false)
+2026-04-18 12:38:55 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:38:57 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:38:57 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"soybeans","reportDate":"4/13/2026"})
+2026-04-18 12:38:57 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="4/13/2026"
+2026-04-18 12:38:58 [WARN]: [AMS] Report 3192 returned no price rows for soybeans
+2026-04-18 12:38:58 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 12:38:58 [INFO]: [TOOLS] ✅ get_ams_prices done in 1765ms (cached: false)
+2026-04-18 12:38:58 [INFO]: [TOOLS] Executing: get_transport_cost({"origin":"illinois","destination":"chicago","commodity":"soybeans","quantityTons":100})
+2026-04-18 12:39:01 [WARN]: Socrata transport fetch failed: Request failed with status code 403
+2026-04-18 12:39:01 [INFO]: [TOOLS] ✅ get_transport_cost done in 2904ms (cached: false)
+2026-04-18 12:39:49 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:39:50 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 12:39:50 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"cattle","market":"OKC","reportDate":"4/13/2026"})
+2026-04-18 12:39:50 [INFO]: [AMS] Fetching prices: commodity="cattle", market="OKC", date="4/13/2026"
+2026-04-18 12:39:59 [INFO]: [TOOLS] ✅ get_ams_prices done in 9492ms (cached: false)
+2026-04-18 12:40:52 [INFO]: ✅ MongoDB connected
+2026-04-18 12:40:52 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 12:40:52 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 12:40:52 [INFO]: 🤖 Gemini Model: gemini-3.0-flash
+2026-04-18 12:40:52 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 12:40:53 [INFO]: [WS] Client connected: _GIudS79k04OuBzHAAAB
+2026-04-18 12:41:00 [INFO]: [WS] Client disconnected: _GIudS79k04OuBzHAAAB
+2026-04-18 12:41:00 [INFO]: [WS] Client connected: ZidmV4ulmuWUJK8lAAAD
+2026-04-18 12:41:13 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:41:13 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 12:41:13 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"soybeans","reportDate":"4/13/2026"})
+2026-04-18 12:41:13 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="4/13/2026"
+2026-04-18 12:41:15 [WARN]: [AMS] Report 3192 returned no price rows for soybeans
+2026-04-18 12:41:15 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 12:41:16 [INFO]: [TOOLS] ✅ get_ams_prices done in 2374ms (cached: false)
+2026-04-18 12:41:16 [INFO]: [TOOLS] Executing: get_transport_cost({"origin":"illinois","destination":"chicago","commodity":"soybeans","quantityTons":100})
+2026-04-18 12:41:18 [WARN]: Socrata transport fetch failed: Request failed with status code 403
+2026-04-18 12:41:18 [INFO]: [TOOLS] ✅ get_transport_cost done in 2516ms (cached: false)
+2026-04-18 12:43:03 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 12:43:04 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 12:43:04 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"cattle","market":"OKC","reportDate":"4/13/2026"})
+2026-04-18 12:43:04 [INFO]: [AMS] Fetching prices: commodity="cattle", market="OKC", date="4/13/2026"
+2026-04-18 12:43:11 [INFO]: [TOOLS] ✅ get_ams_prices done in 7832ms (cached: false)
+2026-04-18 12:48:33 [INFO]: [WS] Client disconnected: ZidmV4ulmuWUJK8lAAAD
+2026-04-18 12:48:36 [INFO]: [WS] Client connected: 3L1jB1_KzXoYY6WzAAAF
+2026-04-18 13:01:53 [INFO]: [WS] Client disconnected: 3L1jB1_KzXoYY6WzAAAF
+2026-04-18 13:01:54 [INFO]: [WS] Client connected: k1qZ4jdnCvJ4qseJAAAH
+2026-04-18 13:01:57 [INFO]: [WS] Client disconnected: k1qZ4jdnCvJ4qseJAAAH
+2026-04-18 13:01:58 [INFO]: [WS] Client connected: PNKRtW6AVEMOF6icAAAJ
+2026-04-18 13:01:58 [INFO]: [WS] Client disconnected: PNKRtW6AVEMOF6icAAAJ
+2026-04-18 13:02:00 [INFO]: [WS] Client connected: lt7XDqF5zvT7m-osAAAL
+2026-04-18 13:03:03 [INFO]: [WS] Client disconnected: lt7XDqF5zvT7m-osAAAL
+2026-04-18 14:38:32 [INFO]: [WS] Client connected: Y6JWZ9rqvhFt9-PnAAAN
+2026-04-18 14:39:09 [INFO]: [WS] Client disconnected: Y6JWZ9rqvhFt9-PnAAAN
+2026-04-18 14:39:10 [INFO]: [WS] Client connected: lyQj2XMUq91jp8u9AAAP
+2026-04-18 14:46:45 [INFO]: ✅ MongoDB connected
+2026-04-18 14:46:45 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 14:46:45 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 14:46:45 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 14:46:45 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 14:47:04 [INFO]: [WS] Client connected: l5vgiiNGjCBrLU4iAAAB
+2026-04-18 14:47:45 [INFO]: [WS] Client disconnected: l5vgiiNGjCBrLU4iAAAB
+2026-04-18 14:48:03 [INFO]: ✅ MongoDB connected
+2026-04-18 14:48:03 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 14:48:03 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 14:48:03 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 14:48:03 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 14:48:07 [INFO]: [WS] Client connected: d4WlP65gp7Ju4aJmAAAB
+2026-04-18 14:48:41 [INFO]: [WS] Client disconnected: d4WlP65gp7Ju4aJmAAAB
+2026-04-18 14:48:41 [INFO]: [WS] Client connected: hLgV8IXDpIMHayiwAAAD
+2026-04-18 14:48:51 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 14:49:07 [ERROR]: [GEMINI R1] Failed: read ECONNRESET. Using keyword fallback.
+2026-04-18 14:49:07 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 14:49:07 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 14:49:22 [WARN]: AMS fetch failed [timeout] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: timeout of 15000ms exceeded
+2026-04-18 14:49:22 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 14:49:32 [INFO]: [TOOLS] ✅ get_ams_prices done in 25039ms (cached: false)
+2026-04-18 14:49:32 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"iowa"})
+2026-04-18 14:49:32 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 14:49:47 [WARN]: AMS fetch failed [timeout] for https://marsapi.ams.usda.gov/services/v1.1/reports/2850: timeout of 15000ms exceeded
+2026-04-18 14:49:47 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 14:49:57 [INFO]: [TOOLS] ✅ get_crop_forecast done in 25032ms (cached: false)
+2026-04-18 14:52:26 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 14:52:41 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 14:52:41 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"soybeans","reportDate":"4/13/2026"})
+2026-04-18 14:52:41 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="4/13/2026"
+2026-04-18 14:52:42 [WARN]: [AMS] Report 3192 returned no price rows for soybeans
+2026-04-18 14:52:42 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 14:52:44 [INFO]: [TOOLS] ✅ get_ams_prices done in 3117ms (cached: false)
+2026-04-18 14:52:44 [INFO]: [TOOLS] Executing: get_transport_cost({"origin":"illinois","destination":"chicago","commodity":"soybeans","quantityTons":100})
+2026-04-18 14:52:45 [WARN]: Socrata transport fetch failed: Request failed with status code 403
+2026-04-18 14:52:45 [INFO]: [TOOLS] ✅ get_transport_cost done in 1348ms (cached: false)
+2026-04-18 14:53:41 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 14:53:42 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 14:53:42 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn","reportDate":"4/13/2026"})
+2026-04-18 14:53:42 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="4/13/2026"
+2026-04-18 14:53:43 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 14:53:43 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 14:53:44 [INFO]: [TOOLS] ✅ get_ams_prices done in 1776ms (cached: false)
+2026-04-18 14:55:10 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 14:55:12 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 14:55:12 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"milk"})
+2026-04-18 14:55:12 [INFO]: [AMS] Fetching prices: commodity="milk", market="any", date="latest"
+2026-04-18 14:55:13 [WARN]: [AMS] Report 2991 returned no price rows for milk
+2026-04-18 14:55:13 [INFO]: [AMS] Falling back to keyword search for "milk"
+2026-04-18 14:55:14 [INFO]: [TOOLS] ✅ get_ams_prices done in 2320ms (cached: false)
+2026-04-18 14:58:07 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 14:58:08 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 14:58:08 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 14:58:08 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 14:58:09 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 14:58:09 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 14:58:10 [INFO]: [TOOLS] ✅ get_ams_prices done in 1364ms (cached: false)
+2026-04-18 15:22:43 [INFO]: ✅ MongoDB connected
+2026-04-18 15:22:43 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:22:43 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:22:43 [INFO]: 🤖 Gemini Model: gemini-3.1-pro
+2026-04-18 15:22:43 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:24:27 [INFO]: ✅ MongoDB connected
+2026-04-18 15:24:27 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:24:27 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:24:27 [INFO]: 🤖 Gemini Model: gemini-3.1-pro
+2026-04-18 15:24:27 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:24:38 [INFO]: [WS] Client connected: 7BKAhqNbs-vvSW9sAAAB
+2026-04-18 15:25:07 [INFO]: ✅ MongoDB connected
+2026-04-18 15:25:07 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:25:07 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:25:07 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 15:25:07 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:25:10 [INFO]: [WS] Client connected: Dt2dfhP84BhgzXGmAAAB
+2026-04-18 15:25:40 [INFO]: [WS] Client disconnected: Dt2dfhP84BhgzXGmAAAB
+2026-04-18 15:25:40 [INFO]: [WS] Client connected: kLdFtuZ97Szx585rAAAD
+2026-04-18 15:25:49 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:25:50 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:25:50 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"milk"})
+2026-04-18 15:25:50 [INFO]: [AMS] Fetching prices: commodity="milk", market="any", date="latest"
+2026-04-18 15:25:52 [WARN]: [AMS] Report 2991 returned no price rows for milk
+2026-04-18 15:25:52 [INFO]: [AMS] Falling back to keyword search for "milk"
+2026-04-18 15:25:53 [INFO]: [TOOLS] ✅ get_ams_prices done in 2233ms (cached: false)
+2026-04-18 15:26:56 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:26:57 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:26:57 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:26:57 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:26:58 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:26:58 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:26:59 [INFO]: [TOOLS] ✅ get_ams_prices done in 1187ms (cached: false)
+2026-04-18 15:36:19 [INFO]: [WS] Client disconnected: kLdFtuZ97Szx585rAAAD
+2026-04-18 15:36:19 [INFO]: [WS] Client connected: Zn8mMtOlxuagn1fJAAAF
+2026-04-18 15:41:30 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:41:31 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:41:31 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:41:31 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:41:34 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:41:34 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:41:34 [INFO]: [TOOLS] ✅ get_ams_prices done in 2667ms (cached: false)
+2026-04-18 15:42:17 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:42:18 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:42:18 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:42:18 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:42:19 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:42:19 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:42:19 [INFO]: [TOOLS] ✅ get_ams_prices done in 1366ms (cached: false)
+2026-04-18 15:42:51 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:42:52 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:42:52 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:42:52 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:42:53 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:42:53 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:42:53 [INFO]: [TOOLS] ✅ get_ams_prices done in 1107ms (cached: false)
+2026-04-18 15:44:06 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:44:07 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 15:44:07 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:44:07 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:44:08 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:44:08 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:44:08 [INFO]: [TOOLS] ✅ get_ams_prices done in 1178ms (cached: false)
+2026-04-18 15:55:29 [INFO]: ✅ MongoDB connected
+2026-04-18 15:55:29 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:55:29 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:55:29 [INFO]: 🤖 Gemini Model: gemini-3-flash
+2026-04-18 15:55:29 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:55:40 [INFO]: [WS] Client connected: IkOuyLS2zLKR-A0nAAAB
+2026-04-18 15:55:48 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:55:48 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:55:48 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:55:48 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:55:50 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:55:50 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:55:50 [INFO]: [TOOLS] ✅ get_ams_prices done in 1894ms (cached: false)
+2026-04-18 15:56:09 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:56:10 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:56:10 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:56:10 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:56:10 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:56:10 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:56:11 [INFO]: [TOOLS] ✅ get_ams_prices done in 1237ms (cached: false)
+2026-04-18 15:56:45 [INFO]: ✅ MongoDB connected
+2026-04-18 15:56:45 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:56:45 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:56:45 [INFO]: 🤖 Gemini Model: gemini-3.1-pro
+2026-04-18 15:56:45 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:56:48 [INFO]: [WS] Client connected: 7n-NysP1kBf7vmq5AAAC
+2026-04-18 15:56:52 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:56:53 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:56:53 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:56:53 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:56:53 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:56:53 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 15:56:54 [INFO]: [TOOLS] ✅ get_ams_prices done in 1305ms (cached: false)
+2026-04-18 15:57:21 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:57:21 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:57:21 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"texas"})
+2026-04-18 15:57:21 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 15:57:22 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 15:57:22 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 15:57:22 [INFO]: [TOOLS] ✅ get_crop_forecast done in 1292ms (cached: false)
+2026-04-18 15:57:22 [INFO]: [TOOLS] Executing: get_ers_outlook({"commodity":"corn"})
+2026-04-18 15:57:22 [INFO]: [TOOLS] ✅ get_ers_outlook done in 1ms (cached: true)
+2026-04-18 15:57:22 [INFO]: [TOOLS] Executing: get_weather({"location":"texas"})
+2026-04-18 15:57:23 [INFO]: [TOOLS] ✅ get_weather done in 432ms (cached: false)
+2026-04-18 15:57:31 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:57:32 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:57:32 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 15:57:32 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 15:57:33 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 15:57:33 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 15:57:33 [INFO]: [TOOLS] ✅ get_ams_prices done in 1234ms (cached: false)
+2026-04-18 15:59:50 [INFO]: ✅ MongoDB connected
+2026-04-18 15:59:50 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 15:59:50 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 15:59:50 [INFO]: 🤖 Gemini Model: gemini-3.0-flash
+2026-04-18 15:59:50 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 15:59:52 [INFO]: [WS] Client connected: JghIPH2xpI677J6YAAAB
+2026-04-18 15:59:57 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 15:59:57 [ERROR]: [GEMINI R1] Failed: Request failed with status code 404. Using keyword fallback.
+2026-04-18 15:59:57 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 15:59:57 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 15:59:58 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 15:59:58 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 16:00:00 [INFO]: [TOOLS] ✅ get_ams_prices done in 2364ms (cached: false)
+2026-04-18 16:23:14 [INFO]: ✅ MongoDB connected
+2026-04-18 16:23:14 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 16:23:14 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 16:23:14 [INFO]: 🤖 Gemini Model: gemini-1.5-flash
+2026-04-18 16:23:14 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 16:23:22 [INFO]: [WS] Client connected: A_kEkw5L-GEoQXyjAAAB
+2026-04-18 16:23:28 [INFO]: [WS] Client connected: n_H_uNZF8E8CmpvtAAAD
+2026-04-18 16:23:30 [INFO]: [WS] Client disconnected: A_kEkw5L-GEoQXyjAAAB
+2026-04-18 16:23:46 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 16:23:47 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 16:23:47 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"corn"})
+2026-04-18 16:23:47 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 16:23:49 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 16:23:49 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 16:23:49 [INFO]: [TOOLS] ✅ get_ams_prices done in 2374ms (cached: false)
+2026-04-18 16:23:49 [INFO]: [TOOLS] Executing: get_crop_forecast({"commodity":"corn","location":"iowa"})
+2026-04-18 16:23:49 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 16:23:50 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 16:23:50 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 16:23:50 [INFO]: [TOOLS] ✅ get_crop_forecast done in 1152ms (cached: false)
+2026-04-18 16:24:19 [INFO]: [GEMINI R1] Requesting tool selections...
+2026-04-18 16:24:20 [ERROR]: [GEMINI R1] Failed: Request failed with status code 400. Using keyword fallback.
+2026-04-18 16:24:20 [INFO]: [TOOLS] Executing: get_ams_prices({"commodity":"eggs","reportDate":"4/15/2026"})
+2026-04-18 16:24:20 [INFO]: [AMS] Fetching prices: commodity="eggs", market="any", date="4/15/2026"
+2026-04-18 16:24:21 [WARN]: [AMS] Report 2843 returned no price rows for eggs
+2026-04-18 16:24:21 [INFO]: [AMS] Falling back to keyword search for "eggs"
+2026-04-18 16:24:21 [INFO]: [TOOLS] ✅ get_ams_prices done in 1651ms (cached: false)
+2026-04-18 16:27:58 [INFO]: [WS] Client connected: 5HG15JpOEHV3TZ66AAAF
+2026-04-18 16:41:06 [INFO]: ✅ MongoDB connected
+2026-04-18 16:41:06 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 16:41:06 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 16:41:06 [INFO]: 🤖 Gemini Model: gemini-1.5-flash
+2026-04-18 16:41:06 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 16:41:11 [INFO]: [WS] Client connected: z6ADLXgk2BjprEGYAAAB
+2026-04-18 16:41:14 [INFO]: [WS] Client connected: VM8MwVzLGGX1QuhVAAAD
+2026-04-18 16:41:58 [INFO]: [WS] Client disconnected: z6ADLXgk2BjprEGYAAAB
+2026-04-18 16:41:58 [INFO]: [WS] Client disconnected: VM8MwVzLGGX1QuhVAAAD
+2026-04-18 16:42:10 [INFO]: ✅ MongoDB connected
+2026-04-18 16:42:10 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 16:42:10 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 16:42:10 [INFO]: 🤖 Gemini Model: gemini-1.5-flash
+2026-04-18 16:42:10 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 16:42:15 [INFO]: [WS] Client connected: OCRav08iFHULG33OAAAB
+2026-04-18 16:42:20 [INFO]: [WS] Client connected: f6XpI4cH-7MYpD2wAAAD
+2026-04-18 16:42:24 [INFO]: [WS] Client disconnected: OCRav08iFHULG33OAAAB
+2026-04-18 16:42:25 [INFO]: [WS] Client connected: iEA-YdqgrNiCtqFkAAAF
+2026-04-18 16:42:29 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 16:42:29 [INFO]: ::1 - - [18/Apr/2026:11:12:29 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 556 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:29 [INFO]: ::1 - - [18/Apr/2026:11:12:29 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 570 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:31 [INFO]: ::1 - - [18/Apr/2026:11:12:31 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 16:42:32 [INFO]: ::1 - - [18/Apr/2026:11:12:32 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:33 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 16:42:33 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 16:42:34 [INFO]: ::1 - - [18/Apr/2026:11:12:34 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:34 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 16:42:35 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 16:42:35 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 16:42:36 [INFO]: ::1 - - [18/Apr/2026:11:12:36 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:50 [INFO]: ::1 - - [18/Apr/2026:11:12:50 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:50 [INFO]: ::1 - - [18/Apr/2026:11:12:50 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:42:59 [INFO]: ::1 - - [18/Apr/2026:11:12:59 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 16:43:05 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:43:06 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 16:43:32 [INFO]: ✅ MongoDB connected
+2026-04-18 16:43:32 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 16:43:32 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 16:43:32 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 16:43:32 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 16:43:35 [INFO]: [WS] Client connected: wTznfqk0WE3S4VCBAAAB
+2026-04-18 16:43:37 [INFO]: [WS] Client disconnected: wTznfqk0WE3S4VCBAAAB
+2026-04-18 16:43:37 [INFO]: [WS] Client connected: qgCdXziyQbbe9EubAAAD
+2026-04-18 16:43:38 [INFO]: [WS] Client connected: PywgCJlrd7Q5C918AAAF
+2026-04-18 16:43:43 [INFO]: [WS] Client disconnected: PywgCJlrd7Q5C918AAAF
+2026-04-18 16:43:43 [INFO]: [WS] Client connected: z1eWA0Von-nRyWlWAAAH
+2026-04-18 16:43:44 [INFO]: [WS] Client disconnected: z1eWA0Von-nRyWlWAAAH
+2026-04-18 16:44:17 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:45:08 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:45:53 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:46:22 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:46:52 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:48:25 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:49:00 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:50:50 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:50:51 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:50:55 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:51:04 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:51:30 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:51:31 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:51:35 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:51:44 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:51:50 [INFO]: [WS] Client disconnected: qgCdXziyQbbe9EubAAAD
+2026-04-18 16:51:50 [INFO]: [WS] Client connected: X4u4EuoDr1KSXIeEAAAJ
+2026-04-18 16:51:55 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:51:55 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:52:00 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:52:08 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:52:56 [INFO]: [WS] Client disconnected: X4u4EuoDr1KSXIeEAAAJ
+2026-04-18 16:52:56 [INFO]: [WS] Client connected: d7iPzHJbtiVoBVGqAAAL
+2026-04-18 16:52:59 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:53:00 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:53:04 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:53:13 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:54:14 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:54:43 [ERROR]: [GEMINI] Chat failed: read ECONNRESET
+2026-04-18 16:54:53 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:54:54 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:54:59 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:55:08 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:55:22 [INFO]: [WS] Client disconnected: d7iPzHJbtiVoBVGqAAAL
+2026-04-18 16:55:23 [INFO]: [WS] Client connected: yCl20lLeEnJyUwhnAAAN
+2026-04-18 16:55:27 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:55:28 [WARN]: Gemini 429 rate limit. Retrying in 4s...
+2026-04-18 16:55:33 [WARN]: Gemini 429 rate limit. Retrying in 8s...
+2026-04-18 16:55:41 [ERROR]: [GEMINI] Chat failed: Request failed with status code 429
+2026-04-18 16:56:47 [INFO]: ✅ MongoDB connected
+2026-04-18 16:56:47 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 16:56:47 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 16:56:47 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 16:56:47 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 16:56:50 [INFO]: [WS] Client connected: 6aYHKG15Z2aCRQs2AAAB
+2026-04-18 16:56:54 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 16:59:26 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:00:18 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:01:23 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:01:50 [INFO]: ::1 - - [18/Apr/2026:11:31:50 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:01:50 [INFO]: ::1 - - [18/Apr/2026:11:31:50 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:01:55 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:01:55 [INFO]: ::1 - - [18/Apr/2026:11:31:55 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 556 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:01:55 [INFO]: ::1 - - [18/Apr/2026:11:31:55 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 570 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:01:59 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:01:59 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:01:59 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [INFO]: ::1 - - [18/Apr/2026:11:32:00 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:00 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:02:01 [INFO]: ::1 - - [18/Apr/2026:11:32:01 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:02:02 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:02:02 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:02:03 [INFO]: ::1 - - [18/Apr/2026:11:32:03 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:02:03 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:02:05 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:02:05 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:02:05 [INFO]: ::1 - - [18/Apr/2026:11:32:05 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:03:14 [INFO]: ✅ MongoDB connected
+2026-04-18 17:03:14 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:03:14 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:03:14 [INFO]: 🤖 Gemini Model: gemini-3.1-pro
+2026-04-18 17:03:14 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:03:17 [INFO]: [WS] Client connected: 22mJEr_cLCUVHHnuAAAB
+2026-04-18 17:03:42 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:03:42 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 17:04:24 [INFO]: ✅ MongoDB connected
+2026-04-18 17:04:24 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:04:24 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:04:24 [INFO]: 🤖 Gemini Model: gemini-3.1-pro
+2026-04-18 17:04:24 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:04:28 [INFO]: [WS] Client connected: lpDYdPn2GJ2h-UIVAAAB
+2026-04-18 17:04:48 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:04:49 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 17:05:08 [INFO]: ✅ MongoDB connected
+2026-04-18 17:05:08 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:05:08 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:05:08 [INFO]: 🤖 Gemini Model: gemini-3.1-flash
+2026-04-18 17:05:08 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:05:09 [INFO]: [WS] Client connected: ytJnYE4OnNkdDv9PAAAB
+2026-04-18 17:05:18 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:05:18 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 17:05:35 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:05:36 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 17:05:56 [INFO]: ✅ MongoDB connected
+2026-04-18 17:05:56 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:05:56 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:05:56 [INFO]: 🤖 Gemini Model: gemini-3-flash
+2026-04-18 17:05:56 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:06:01 [INFO]: [WS] Client connected: fDB3RMNsUvX93OTxAAAB
+2026-04-18 17:06:16 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:06:16 [ERROR]: [GEMINI] Chat failed: Request failed with status code 404
+2026-04-18 17:06:32 [INFO]: ✅ MongoDB connected
+2026-04-18 17:06:32 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:06:32 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:06:32 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:06:32 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:06:34 [INFO]: [WS] Client connected: IYvY4WcaJPbm_wK7AAAB
+2026-04-18 17:06:35 [INFO]: [WS] Client disconnected: IYvY4WcaJPbm_wK7AAAB
+2026-04-18 17:06:35 [INFO]: [WS] Client connected: -gmW_xfmWzvm0RVUAAAD
+2026-04-18 17:06:47 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:08:26 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:11:01 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:15:24 [INFO]: [WS] Client disconnected: -gmW_xfmWzvm0RVUAAAD
+2026-04-18 17:15:24 [INFO]: [WS] Client connected: _RQ6IS4RW6gNAnCRAAAF
+2026-04-18 17:17:16 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:17:16 [INFO]: ::1 - - [18/Apr/2026:11:47:16 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 556 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:16 [INFO]: ::1 - - [18/Apr/2026:11:47:16 +0000] "GET /api/data/wasde/corn HTTP/1.1" 200 570 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:17 [INFO]: ::1 - - [18/Apr/2026:11:47:17 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:18 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:17:18 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:18 [INFO]: ::1 - - [18/Apr/2026:11:47:18 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:18 [INFO]: ::1 - - [18/Apr/2026:11:47:18 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:18 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:17:19 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:17:19 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:17:20 [INFO]: ::1 - - [18/Apr/2026:11:47:20 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:21 [INFO]: [AMS] Fetching prices: commodity="soybeans", market="any", date="latest"
+2026-04-18 17:17:21 [INFO]: ::1 - - [18/Apr/2026:11:47:21 +0000] "GET /api/data/wasde/soybeans HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:17:21 [INFO]: ::1 - - [18/Apr/2026:11:47:21 +0000] "GET /api/map/prices?commodity=soybeans HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:22 [WARN]: [AMS] Report 3192 returned no price rows for soybeans
+2026-04-18 17:17:22 [INFO]: [AMS] Falling back to keyword search for "soybeans"
+2026-04-18 17:17:23 [INFO]: ::1 - - [18/Apr/2026:11:47:23 +0000] "GET /api/data/ams/soybeans HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:26 [INFO]: ::1 - - [18/Apr/2026:11:47:26 +0000] "GET /api/data/weather/minnesota HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:30 [INFO]: ::1 - - [18/Apr/2026:11:47:30 +0000] "GET /api/data/weather/iowa HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:17:33 [INFO]: ::1 - - [18/Apr/2026:11:47:33 +0000] "GET /api/data/weather/kansas HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:18:05 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:18:05 [INFO]: ::1 - - [18/Apr/2026:11:48:05 +0000] "GET /api/data/wasde/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:18:06 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:06 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:06 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:06 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:18:06 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:18:06 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:18:07 [INFO]: ::1 - - [18/Apr/2026:11:48:07 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:18:07 [INFO]: ::1 - - [18/Apr/2026:11:48:07 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:19:27 [INFO]: ::1 - - [18/Apr/2026:11:49:27 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:19:27 [INFO]: ::1 - - [18/Apr/2026:11:49:27 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:19:51 [INFO]: ::1 - - [18/Apr/2026:11:49:51 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:25:30 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:26:04 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:33:29 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:33:29 [INFO]: ::1 - - [18/Apr/2026:12:03:29 +0000] "GET /api/data/wasde/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:29 [INFO]: ::1 - - [18/Apr/2026:12:03:29 +0000] "GET /api/data/wasde/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:31 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:33:31 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [INFO]: ::1 - - [18/Apr/2026:12:03:31 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:31 [INFO]: ::1 - - [18/Apr/2026:12:03:31 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:31 [INFO]: [AMS] Fetching prices: commodity="corn", market="any", date="latest"
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [ERROR]: NASS API error: Request failed with status code 400
+2026-04-18 17:33:31 [INFO]: ::1 - - [18/Apr/2026:12:03:31 +0000] "GET /api/map/prices?commodity=corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:33 [WARN]: [AMS] Report 2850 returned no price rows for corn
+2026-04-18 17:33:33 [INFO]: [AMS] Falling back to keyword search for "corn"
+2026-04-18 17:33:33 [INFO]: ::1 - - [18/Apr/2026:12:03:33 +0000] "GET /api/data/ams/corn HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:33:38 [INFO]: [WS] Client disconnected: _RQ6IS4RW6gNAnCRAAAF
+2026-04-18 17:34:54 [INFO]: ✅ MongoDB connected
+2026-04-18 17:34:54 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:34:54 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:34:54 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:34:54 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:36:51 [INFO]: ✅ MongoDB connected
+2026-04-18 17:36:51 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:36:51 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:36:51 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:36:51 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:39:21 [INFO]: [WS] Client connected: 6BqiojSU9RgMn5giAAAB
+2026-04-18 17:39:33 [INFO]: [WS] Client connected: NHxvOo5KhVGrXgdLAAAD
+2026-04-18 17:40:01 [INFO]: [WS] Client disconnected: NHxvOo5KhVGrXgdLAAAD
+2026-04-18 17:40:01 [INFO]: ::1 - - [18/Apr/2026:12:10:01 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:40:01 [INFO]: ::1 - - [18/Apr/2026:12:10:01 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:40:20 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:40:51 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:41:21 [INFO]: ::1 - - [18/Apr/2026:12:11:21 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:41:21 [INFO]: ::1 - - [18/Apr/2026:12:11:21 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:42:22 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:47:53 [INFO]: ✅ MongoDB connected
+2026-04-18 17:47:53 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:47:53 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:47:53 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:47:53 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:48:43 [INFO]: ✅ MongoDB connected
+2026-04-18 17:48:43 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:48:43 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:48:43 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:48:43 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:48:46 [INFO]: [WS] Client connected: IzLWjKaP9uVAacL1AAAB
+2026-04-18 17:48:47 [INFO]: [WS] Client disconnected: IzLWjKaP9uVAacL1AAAB
+2026-04-18 17:48:47 [INFO]: [WS] Client connected: vwDswn-eif4v7oTlAAAD
+2026-04-18 17:49:03 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:49:16 [INFO]: ::1 - - [18/Apr/2026:12:19:16 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:49:16 [INFO]: ::1 - - [18/Apr/2026:12:19:16 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:50:08 [INFO]: [GEMINI] Processing Query globally natively...
+2026-04-18 17:51:59 [INFO]: ✅ MongoDB connected
+2026-04-18 17:51:59 [INFO]: 🚀 AgriMCP AI v2.0 running on http://localhost:5000
+2026-04-18 17:51:59 [INFO]: 📡 AMS API Key: ✅ Configured
+2026-04-18 17:51:59 [INFO]: 🤖 Gemini Model: gemini-2.5-flash
+2026-04-18 17:51:59 [INFO]: 🌐 Frontend: http://localhost:5173
+2026-04-18 17:52:03 [INFO]: [WS] Client connected: wm2szDs7-6gdda0yAAAB
+2026-04-18 17:52:03 [INFO]: [WS] Client disconnected: wm2szDs7-6gdda0yAAAB
+2026-04-18 17:52:04 [INFO]: [WS] Client connected: 4f_F1Cq7n7Hs-g8UAAAD
+2026-04-18 17:52:09 [INFO]: ::1 - - [18/Apr/2026:12:22:09 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 200 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:52:09 [INFO]: ::1 - - [18/Apr/2026:12:22:09 +0000] "GET /api/logs?page=1&limit=15 HTTP/1.1" 304 - "http://localhost:5173/secret-routes-for-logs-12345" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+2026-04-18 17:52:22 [INFO]: [GEMINI] Processing Query globally natively...
